@@ -26,10 +26,14 @@ export default function Home() {
             </nav>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-            <Button variant="ghost" className="text-base hover:bg-transparent hover:underline">
-              Log in
+            <Button asChild variant="ghost" className="text-base hover:bg-transparent hover:underline">
+              <a href="https://app.locumpro.in/login">Log in</a>
             </Button>
-            <Button>Sign Up</Button>
+            <Button>
+              <a href="https://app.locumpro.in/register">
+              Sign Up
+              </a>
+            </Button>
           </div>
         </div>
       </header>
@@ -41,15 +45,15 @@ export default function Home() {
             <Badge className="px-4 py-1 mb-4 bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
               ✨ Revolutionizing Healthcare Staffing
             </Badge>
-            
+
             <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50 animate-gradient">
               Empower Your Medical Practice
             </h1>
-            
+
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Connect with qualified locum professionals, streamline scheduling, and elevate patient care with Locum Pro.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 justify-center items-center">
               <Button size="lg" className="group animate-pulse-slow">
                 Get Started
